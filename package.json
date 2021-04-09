@@ -1,0 +1,37 @@
+{
+  "name": "longpolling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server & npm run client",
+    "server": "node server.js",
+    "client": "sui-bundler dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@s-ui/react-atom-button": "^1.64.0",
+    "@s-ui/react-molecule-notification": "^1.24.0",
+    "@s-ui/theme": "^8.94.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "prettier": "./node_modules/@s-ui/lint/.prettierrc.js",
+  "stylelint": {
+    "extends": "./node_modules/@s-ui/lint/stylelint.config.js"
+  },
+  "devDependencies": {
+    "@s-ui/bundler": "^7.15.0",
+    "@s-ui/lint": "^3.30.0"
+  }
+}
